@@ -97,6 +97,7 @@ import PluginReference.MC_Sign;
 import PluginReference.MC_World;
 import PluginReference.PluginInfo;
 
+@Deprecated
 public class MyPlugin extends PluginReference.PluginBase {
     public static MC_Server server = null;
     public static Logger logger;
@@ -160,6 +161,13 @@ public class MyPlugin extends PluginReference.PluginBase {
     }
 
     public void onStartup(MC_Server argServer) {
+	    logger.warn("****************************************");
+		logger.warn(" ! BukkitBridge is now Discontinued. ! ");
+		logger.warn("On 2025.11.07, NogyangSpigot Replaces");
+		logger.warn("Rainbow and BukkitBridge. This Plugin is");
+		logger.warn("no longer supported. We Recommend your");
+		logger.warn("Switch to NogyangSpigot. Just go switch.");
+	    logger.warn("****************************************");
         logger.info("BukkitBridge v2.4 --- Starting up...");
         server = argServer;
 
